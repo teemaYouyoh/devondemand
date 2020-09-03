@@ -95,6 +95,14 @@ a{
     text-decoration: underline;
     font-weight: 400;
     text-decoration: underline;
+<<<<<<< HEAD
+=======
+}
+
+.header_item a:hover{
+    font-family: "GTWalsheimProBold";
+    transition: 0.5s;
+>>>>>>> 1ee98bd653e9dd8142123dcc76e4d4c8d0cc191d
 }
 
 .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_start.MuiButton-containedPrimary{

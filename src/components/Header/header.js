@@ -4,6 +4,7 @@ import "./header.css";
 import CloseIcon from '@material-ui/icons/Close';
 import Button from '@material-ui/core/Button';
 import KissIcon from "./img/kiss.png";
+import Logo from "./img/devondemand.png";
 const Header = () => {
   return (
     <header className="header">
@@ -21,7 +22,7 @@ const Header = () => {
       <nav className="header_wrapper">
         <ul className="header_menu navigation">
           <li className="header_item logo">
-            <Link to="/">devondemand</Link>
+            <Link to="/"><img src={Logo} alt="logo"/></Link>
           </li>
           <li className="header_item">
             <Link to="/">Process</Link>
