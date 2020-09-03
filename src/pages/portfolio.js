@@ -2,12 +2,12 @@ import React from "react";
 import Layout from "../components/Layout/layout.js";
 
 
- const About = () => {
+ const Portfolio = () => {
   return (
     <Layout>
-      <h1>About</h1>
+      <h1>Portfolio</h1>
     </Layout>
   )
 }
 
-export default About;
+export default Portfolio;
