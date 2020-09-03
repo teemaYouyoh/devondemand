@@ -30,7 +30,13 @@ a{
   width: 100%;
   height: auto;
   max-height: 777px;
-  min-height: 400px;
+  min-height: 500px;
+}
+
+@media screen and (max-width: 1024px){
+  .image_separator{
+    min-height: 400px;
+  }
 }
 
 @media screen and (max-width: 480px){

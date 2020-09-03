@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+.header{
+    background-color: #fafafa;
+}
+
 .discount_header{
     background-color: #2ef893;
     min-height: 58px;
