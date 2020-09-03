@@ -33,7 +33,7 @@ a{
     min-height: 58px;
     display: flex;
     align-items: center;
-    margin-bottom: 46px;
+    margin-bottom: 37px;
 
 }
 
@@ -41,7 +41,6 @@ a{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0px;
 }
 
 .discount_info{
@@ -85,6 +84,10 @@ a{
 }
 
 .logo{
+    transform: rotate(-5deg);
+}
+
+.logo a{
     color: #000000;
     font-size: 20px;
     font-weight: 900;
@@ -92,19 +95,13 @@ a{
     text-decoration: underline;
     font-weight: 400;
     text-decoration: underline;
-    transform: rotate(-9deg);
-}
-
-.header_item a:hover{
-    font-family: "GTWalsheimProBold";
-    transition: 0.5s;
 }
 
 .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_start.MuiButton-containedPrimary{
     background-color: #4b6fff;
     border-radius: 6px;
     text-transform: none;
-    padding: 10px 45px 12px 33px;
+    padding: 10px 37px 12px;
     color: #ffffff;
     font-family: "GTWalsheimProBold";
     font-size: 20px;
