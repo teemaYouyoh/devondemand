@@ -1,0 +1,47 @@
+.share{
+    font-family: "GTWalsheimPro"; 
+    padding-top: 230px;
+    background-color: #fafafa;
+}
+
+.share-items{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 80px;
+}
+
+.share-items .MuiCard-root {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    border-radius: 40px;
+    box-shadow: none;
+    padding-bottom: 70px;
+}
+
+.share-items h5{
+    color: #000000;
+    font-family: 'GTWalsheimProBold';
+    font-size: 40px;
+    letter-spacing: 1.2px;
+    padding: 80px 0px 23px;
+}
+
+.share-items a{
+    color: #919eab;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin-bottom: 100px;
+}
+
+.share-items a:hover{
+    text-decoration: underline;
+    color: #029fff;
+    transition: 0.3s;
+}
+
+.share-items img{
+
+}

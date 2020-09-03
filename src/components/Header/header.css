@@ -1,27 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-.header{
-    background-color: #fafafa;
-}
-
-.container{
-    max-width: 1235px;
-    width: 100%;
-    margin: auto;
-}
-
 .header_wrapper{
     display: flex;
     justify-content: space-between;
@@ -33,7 +9,7 @@ a{
     min-height: 58px;
     display: flex;
     align-items: center;
-    margin-bottom: 46px;
+    margin-bottom: 37px;
 
 }
 
@@ -83,7 +59,15 @@ a{
     transition: 0.5s;
 }
 
+.header_item a:hover{
+    color: #2a62ff;
+    transition: 0.3s;
+}
 .logo{
+    transform: rotate(-5deg);
+}
+
+.logo a{
     color: #000000;
     font-size: 20px;
     font-weight: 900;
@@ -93,16 +77,11 @@ a{
     text-decoration: underline;
 }
 
-.header_item a:hover{
-    font-family: "GTWalsheimProBold";
-    transition: 0.5s;
-}
-
 .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_start.MuiButton-containedPrimary{
     background-color: #4b6fff;
     border-radius: 6px;
     text-transform: none;
-    padding: 10px 45px 12px 33px;
+    padding: 10px 37px 12px;
     color: #ffffff;
     font-family: "GTWalsheimProBold";
     font-size: 20px;
