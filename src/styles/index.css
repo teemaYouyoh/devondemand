@@ -22,3 +22,11 @@ a{
   width: 100%;
   margin: auto;
 }
+
+.image_separator{
+  background: url("../components/About/img/about.png") center no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  min-height: 777px;
+}
