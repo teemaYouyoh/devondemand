@@ -11,7 +11,7 @@ const Header = () => {
         <div className="discount_header">
           <div className="container">
           <div className="discount_wrapper">
-            <h5 className="discount_info">Product Hunt launch : get a $50 discount until September 13, 2020 <img src={KissIcon} className="kiss_icon" alt="kiss_icon"/> </h5>
+            <h5 className="discount_info">Product Hunt launch : <span> get a $50 discount until September 13, 2020 <img src={KissIcon} className="kiss_icon" alt="kiss_icon"/></span> </h5>
             <div className="icon_discount">
               <CloseIcon className="icon_close" />
             </div>

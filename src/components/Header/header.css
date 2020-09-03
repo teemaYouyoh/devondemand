@@ -115,3 +115,20 @@ a{
     max-width: 18px;
     height: auto;
 }
+
+@media screen and (max-width: 765px){
+    .discount_info{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .discount_info{
+        font-size: 10px;
+        letter-spacing: 0.3px;
+        max-width: 260px;
+    }
+    .discount_info span{
+        display: block;
+    }
+}
