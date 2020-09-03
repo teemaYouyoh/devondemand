@@ -1,11 +1,11 @@
 import React from "react"
-import Layout from "../components/Layout/layout.js";
-
+// import Layout from "../components/Layout/layout.js";
+import MainDevelopment from "../components/MainDevelopment/mainDevelopment.js";
 
 export default function Home() {
   return (
-    <Layout>
-      <h1>Hello</h1>
-    </Layout>
+    // <Layout>
+      <MainDevelopment />
+    // </Layout>
   )
 }

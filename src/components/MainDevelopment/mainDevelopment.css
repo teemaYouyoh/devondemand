@@ -1,0 +1,94 @@
+.development {
+    padding-top: 208px;
+    font-family: "GTWalsheimPro"; 
+}
+
+.development-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.development-info {
+    width: 45%;
+}
+.development-info h2{
+    color: #000000;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+}
+
+.development-info p{
+    opacity: 0.8;
+    color: #919eab;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
+.development-info ul{
+
+}
+
+.development-info li{
+    color: #919eab;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+}
+
+.development-form {
+    width: 47%;
+}
+
+.development-form form{
+    border-radius: 10px;
+    background-color: #e0eaf5;
+    padding: 34px 44px;
+}
+
+.development-form h5{
+    color: #000000;
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    margin-bottom: 11px;
+}
+
+.development-form span{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+}
+
+.development-form input{
+
+}
+
+.form-tabs {
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-tabs button{
+    width: 201px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: #ffffff;
+}
+
+.form-tabs__active {
+    color: #2a62ff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.22px;
+    line-height: 18px;
+    border: 2px solid #2a62ff;
+}
+
+.from-section{
+    padding: 0px 15px;
+}
