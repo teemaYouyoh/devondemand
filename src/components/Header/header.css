@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.container{
+    max-width: 1235px;
+    width: 100%;
+    margin: auto;
+}
+
+.header_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount_header{
+    background-color: #2ef893;
+}
+
+.discount_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.discount_info{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    font-family: "GTWalsheimProBold";
+}
