@@ -12,6 +12,10 @@ a{
     text-decoration: none;
 }
 
+.header{
+    background-color: #fafafa;
+}
+
 .container{
     max-width: 1235px;
     width: 100%;
@@ -26,6 +30,11 @@ a{
 
 .discount_header{
     background-color: #2ef893;
+    min-height: 58px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 46px;
+
 }
 
 .discount_wrapper{
@@ -37,7 +46,73 @@ a{
 .discount_info{
     color: #000000;
     font-size: 20px;
-    font-weight: 700;
     letter-spacing: 0.6px;
     font-family: "GTWalsheimProBold";
+    padding: 15px 0px;
+}
+
+.icon_discount{
+    width: 29px;
+    height: 29px;
+    border-radius: 50%;
+    background-color: #fafafa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.icon_close{
+    max-width: 13px;
+    height: auto;
+}
+
+.header_menu{
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation{
+    min-width: 550px;
+}
+
+.header_item a{
+    color: #000000;
+    font-size: 14px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.logo{
+    color: #000000;
+    font-size: 20px;
+    font-weight: 900;
+    letter-spacing: 0.6px;
+    text-decoration: underline;
+    font-weight: 400;
+    text-decoration: underline;
+    transform: rotate(-9deg);
+}
+
+.header_item a:hover{
+    font-family: "GTWalsheimProBold";
+    transition: 0.5s;
+}
+
+.MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_start.MuiButton-containedPrimary{
+    background-color: #4b6fff;
+    border-radius: 6px;
+    text-transform: none;
+    padding: 10px 45px 12px 33px;
+    color: #ffffff;
+    font-family: "GTWalsheimProBold";
+    font-size: 20px;
+    letter-spacing: 0.6px;
+    /* max-width: 170px; */
+    max-height: 58px;
+}
+
+.kiss_icon{
+    max-width: 18px;
+    height: auto;
 }
