@@ -3,25 +3,25 @@
     src: url("../fonts/GTWalsheimPro-Regular.woff") format("woff"); 
     font-style: normal; 
     font-weight: normal; 
-} 
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "GTWalsheimProLight"; 
     src: url("../fonts/GTWalsheimPro-Light.woff") format("woff"); 
     font-style: normal; 
     font-weight: normal; 
-} 
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "GTWalsheimProMedium"; 
     src: url("../fonts/GTWalsheimPro-Medium.woff") format("woff"); 
     font-style: normal; 
     font-weight: normal; 
-} 
-
-@font-face {
+  }
+  
+  @font-face {
     font-family: "GTWalsheimProBold"; 
     src: url("../fonts/GTWalsheimPro-Bold.woff") format("woff"); 
     font-style: normal; 
     font-weight: normal; 
-} 
+  } 

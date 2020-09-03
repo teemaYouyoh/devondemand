@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './header.js'
 import Footer from './footer.js'
 
+import '../styles/fonts.css';
 import '../styles/index.css';
 import 'normalize.css'
 
