@@ -136,3 +136,24 @@ footer h2 {
   color: #919eab;
   font-size: 10px;
 }
+
+
+@media screen and (max-width: 1140px) {
+  .services-wrapper {
+    flex-direction: column-reverse;
+    padding: 29px 0 96px 0;
+  }
+
+  .services_list {
+    margin-top: 44px;
+  }
+
+  .services_subtitle,
+  .services_button {
+    text-align: center;
+  }
+
+  .footer_links {
+    margin-top: 72px;
+  }
+}
