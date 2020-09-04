@@ -1,0 +1,78 @@
+.pricing {
+    font-family: "GTWalsheimPro"; 
+    padding-top: 150px;
+    background-color: #fafafa;
+}
+
+.pricing-wrapper {
+    color: #000000;
+    text-align: center;
+}
+
+.pricing-wrapper h4{
+    font-size: 40px;
+    font-weight: 900;
+    letter-spacing: 1.2px;
+    margin-bottom: 76px;
+}
+
+.pricing-wrapper h5{
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.9px;
+}
+
+.pricing-section {
+  margin-top: 70px;
+}
+
+.pricing-section__price {
+    font-family: 'GTWalsheimProBold';
+    font-size: 140px;
+    font-weight: 900;
+    letter-spacing: 4.2px;
+}
+
+.pricing-section__list{
+    display: flex;
+    justify-content: space-between;
+    margin: 36px auto;
+    max-width: 540px;
+}
+
+.pricing-section__list li {
+    color: #919eab;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 0.6px;
+    display: flex;
+}
+
+.pricing-section__list li img{
+    margin-right: 10px;
+}
+
+.pricing-section__desc {
+    opacity: 0.8;
+    color: #919eab;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+    margin: 0 auto 32px;
+    max-width: 500px;
+}
+.pricing-section__footer {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: 0.9px
+}
+.pricing-section__footer a{
+    text-decoration: underline;
+    color: #4b6fff;
+    transition: 0.3s;
+}
+
+.pricing-section__footer a:hover{
+    color: #93a8fc;
+    transition: 0.3s;
+}

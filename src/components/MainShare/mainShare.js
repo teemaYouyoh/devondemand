@@ -17,21 +17,27 @@ const MainShare = () => {
                 <Button variant="contained" color="primary" href="#contained-buttons">Start now</Button>
               </div>
               <div className="share-items">
+                   <a className="share-item" href="#">
                     <Card >
-                        <h5>Adobe XD</h5>
-                        <a href="#">See the extension</a>
-                        <img src={adobe} alt="Adobe XD"/>
-                    </Card>
-                    <Card >
-                        <h5>Sketch</h5>
-                        <a href="#">See the extension</a>
-                        <img src={sketch} alt="Sketch"/>
-                    </Card>
+                            <h5>Adobe XD</h5>
+                            <a className="share-items__link" href="#">See the extension</a>
+                            <img src={adobe} alt="Adobe XD"/>
+                        </Card>
+                   </a>
+                    <a className="share-item" href="#">
+                        <Card >
+                            <h5>Sketch</h5>
+                            <a className="share-items__link"  href="#">See the extension</a>
+                            <img src={sketch} alt="Sketch"/>
+                        </Card>
+                    </a>
+                  <a className="share-item" href="#">
                     <Card >
                         <h5>Figma</h5>
-                        <a href="#">See the extension</a>
+                        <a  className="share-items__link" href="#">See the extension</a>
                         <img src={figma} alt="Figma"/>
                     </Card>
+                  </a>
               </div>
            </div>
        </div>

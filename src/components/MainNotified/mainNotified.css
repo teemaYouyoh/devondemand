@@ -1,0 +1,32 @@
+.notified {
+    font-family: "GTWalsheimPro"; 
+    padding-top: 150px;
+    background-color: #fafafa;
+}
+
+.notified-wrapper{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+    max-width: 1383px;
+    margin: 0 auto;
+}
+
+.notified-pic{
+    width: 47%;
+}
+
+.notified-pic img{
+    object-fit: cover;
+    width: 100%;
+}
+
+.notified .section-start {
+    margin: 54px 0px 0px 79px;
+    max-width: 609px;
+    width: 51%;
+}
+
+.notified .section-start h3{
+    max-width: 400px;
+}

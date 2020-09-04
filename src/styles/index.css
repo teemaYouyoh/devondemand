@@ -21,6 +21,7 @@ a{
   max-width: 1235px;
   width: 100%;
   margin: auto;
+  padding: 0px 10px;
 }
 
 .image_separator{
@@ -28,5 +29,18 @@ a{
   background-size: cover;
   width: 100%;
   height: auto;
-  min-height: 777px;
+  max-height: 777px;
+  min-height: 500px;
+}
+
+@media screen and (max-width: 1024px){
+  .image_separator{
+    min-height: 400px;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .container{
+    padding: 0px 27px;
+  }
 }
