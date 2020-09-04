@@ -5,7 +5,16 @@ import CloseIcon from '@material-ui/icons/Close';
 import Button from '@material-ui/core/Button';
 import KissIcon from "./img/kiss.png";
 import Logo from "./img/devondemand.png";
+import github from "./img/github.svg";
+import instagram from "./img/instagram.svg";
+import twitter from "./img/twitter.svg";
+
 const Header = () => {
+  const container = document.querySelector(".mob-humburger");
+
+  container.onclick = function(){
+    container.classList.toggle("open");
+  }
   return (
     <header className="header">
         <div className="discount_header">
@@ -44,6 +53,33 @@ const Header = () => {
           </Button>
         </ul>
       </nav>
+      <div className="mobile-menu">
+      <input id="burger" type="checkbox" />
+
+        <label className="mob-humburger" for="burger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav>    
+          <ul>
+              <li><a href="#"><img src={Logo} alt="logo"/></a></li>
+              <li><a href="#">Process</a></li>
+              <li><a href="#">Extensions</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Portfolio</a></li> 
+              <li><Button className="button_start" variant="contained" color="primary">Start now</Button></li>
+              <li><a href="#">Terms of service</a></li> 
+              <li><a href="#">Privacy policy</a></li> 
+              <div className="mobile-foor">
+                  <img src={github} alt="github"/>
+                  <img src={instagram} alt="instagram"/>
+                  <img src={twitter} alt="twitter"/>
+              </div>
+              <li><span>© 2020, DEVONDEMAND.CO. All Rights Reserved.</span></li>
+          </ul>  
+        </nav>
+      </div>
       </div>
       
     </header>

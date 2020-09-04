@@ -19,3 +19,32 @@
     width: 90%;
     margin-top: 18px;
 }
+
+@media(max-width: 1024px){
+    .integrate{
+        padding-top: 150px;
+    }
+}
+
+@media screen and (max-width: 765px){
+    .integrate .section-start {
+        max-width: 400px;
+        margin-bottom: 30px;
+    }
+    .integrate-tools img{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .integrate {
+        padding-top: 60px;
+        padding-bottom: 50px;
+    }
+    .integrate .section-start {
+        max-width: 360px;
+    }
+    .integrate-tools img{
+        margin-top: -18px;
+    }
+}

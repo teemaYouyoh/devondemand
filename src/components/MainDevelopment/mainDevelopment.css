@@ -181,3 +181,105 @@
     padding: 5px 22px;
     font-size: 12px;
 }
+
+@media(max-width: 1300px){
+    .form-tabs button {
+        width: 47%;
+    }
+    .development-form {
+        width: 52.4%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .development-wrapper{
+        flex-direction: column;
+    }
+    .development-info{
+        width: 100%;
+        padding-top: 0px;
+    }
+    .development-info ul{
+        margin-bottom: 40px;
+    }
+    .development-form{
+        margin-top: 40px;
+        width: 100%;
+    }
+    .development-info p{
+        font-size: 18px;
+    }
+    .development-form h5,
+    .development-info h2{
+        font-size: 32px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .development-form form{
+        padding: 13px 25px 18px;
+    }
+    .development-form h5, .development-info h2 {
+        font-size: 22px;
+    }
+    .development-info h2{
+        font-size: 20px;
+        letter-spacing: 0.6px;
+        margin-bottom: 28px;
+    }
+    .development{
+        padding-top: 25px;
+    }
+    .development-info p {
+        font-size: 12px;
+    }
+    .development-info li{
+        font-size: 12px;
+    }
+    .development-info li img{
+        width: 10px;
+    }
+    .development-info ul {
+        margin: 26px 0px 0px;
+    }
+    .development-info .MuiAlert-root{
+        display: none;
+    }
+    .development-form {
+        margin-top: 0px;
+    }
+    .development-form .from-section__text{
+        font-size: 10px;
+        margin-bottom: 10px;
+    }
+    .from-section {
+        padding: 0px 5px;
+    }
+    .form-tabs button,
+    .form-tabs .form-tabs__active{
+        font-size: 10px;
+        height: 27px;
+        border-radius: 4px;
+    }
+    .development-form input {
+        border-radius: 4px;
+        padding: 8px 22px;
+        margin-bottom: 13px;
+        font-size: 10px;
+    }
+    .form-tabs {
+        margin: 1px 0px 10px;
+    }
+    .development-form .MuiButton-contained {
+        font-size: 10px;
+        height: 32px;
+        margin-top: 10px;
+    }
+    .development-footer{
+        margin: 0px auto;
+    }
+    .development-footer span{
+        font-size: 8px;
+        line-height: 0px;
+    }
+}

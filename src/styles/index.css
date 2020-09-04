@@ -18,7 +18,7 @@ a{
 }
 
 .container{
-  max-width: 1235px;
+  max-width: 1250px;
   width: 100%;
   margin: auto;
   padding: 0px 10px;
@@ -33,14 +33,39 @@ a{
   min-height: 500px;
 }
 
+@media screen and (max-width: 1300px){
+  .container{
+    max-width: unset;
+    width: 90%;
+  }
+}
 @media screen and (max-width: 1024px){
   .image_separator{
     min-height: 400px;
   }
+  .section-start h3{
+    font-size: 32px !important;
+  }
+  .section-start p{
+    font-size: 18px !important;
+  }
 }
 
-@media screen and (max-width: 480px){
-  .container{
-    padding: 0px 27px;
+@media(max-width: 520px){
+  .section-start h3 {
+    font-size: 20px !important;
+    margin-bottom: 9px !important;
+  }
+  .section-start p {
+    font-size: 12px !important;
+  }
+  .section-start .MuiButton-containedPrimary span {
+    font-size: 10px !important;
+  }
+  .section-start .MuiButton-containedPrimary {
+    border-radius: 3px;
+    margin-top: 9px !important;
+    width: 87px !important;
+    height: 23px !important;
   }
 }

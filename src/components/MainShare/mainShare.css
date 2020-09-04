@@ -45,3 +45,72 @@
     color: #029fff;
     transition: 0.3s;
 }
+
+@media(max-width: 1300px){
+    .share-wrapper .share-items .share-items__link{
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: 1024px){
+    .share{
+        padding-top: 150px;
+    }
+    .share-items h5{
+        padding-top: 40px;
+        font-size: 24px;
+    }
+    .share-items .MuiCard-root{
+        padding-bottom: 55px;
+    }
+    .share-item img{
+        width: 70px;
+        margin: 0 auto;
+        max-height: 70px;
+    }
+    .share-items .share-items__link{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 765px){
+    .share-item img {
+        width: 45px;
+        max-height: 45px;
+    }
+    .share-items h5 {
+        padding-top: 30px;
+        font-size: 18px;
+    }
+    .share-wrapper .share-items .share-items__link {
+        margin-bottom: 25px;
+        font-size: 12px;
+    }
+    .share-items .MuiCard-root{
+        border-radius: 6px;
+        padding-bottom: 35px;
+    }
+    .share{
+        padding-top: 110px;
+    }
+}
+
+@media(max-width: 520px){
+    .share-items{
+        padding-top: 20px;
+    }
+    .share-items h5 {
+        padding: 12px 0px 5px;
+        font-size: 12px;
+    }
+    .share-wrapper .share-items .share-items__link{
+        font-size: 8px;
+    }
+    .share-item img {
+        width: 26px;
+        max-height: 26px;
+    }
+    .share-items .MuiCard-root{
+        padding-bottom: 25px;
+    }
+}
