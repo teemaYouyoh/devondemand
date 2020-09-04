@@ -1,31 +1,11 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-li{
-    list-style: none;
-}
-
-a{
-    text-decoration: none;
-}
-
-.header{
-    background-color: #fafafa;
-}
-
-.container{
-    max-width: 1235px;
-    width: 100%;
-    margin: auto;
-}
-
 .header_wrapper{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.header{
+    background-color: #fafafa;
 }
 
 .discount_header{
@@ -117,4 +97,21 @@ a{
 .kiss_icon{
     max-width: 18px;
     height: auto;
+}
+
+@media screen and (max-width: 765px){
+    .discount_info{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px){
+    .discount_info{
+        font-size: 10px;
+        letter-spacing: 0.3px;
+        max-width: 260px;
+    }
+    .discount_info span{
+        display: block;
+    }
 }
