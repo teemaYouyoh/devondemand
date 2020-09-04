@@ -71,3 +71,68 @@
 .join-show__stars img{
     margin: 0px 5px;
 }
+
+@media(max-width: 1300px){
+    .join-show .join-show__comment {
+        top: -36px;
+    }
+    .join .section-start{
+        padding-bottom: 25px;
+    }
+}
+
+@media(max-width: 1024px){
+    .join{
+        padding-top: 150px;
+        padding-bottom: 0px;
+    }
+    .join-show__comment p{
+        font-size: 14px;
+    }
+    .join-commnets__view{
+        width: 53%;
+    }
+    .join-comments__stars{
+        left: 30px;
+    }
+}
+
+@media(max-width: 765px){
+    .join-comments {
+        margin-top: 115px;
+    }
+    .join-show .join-show__comment {
+        top: -90px;
+    }
+    .join-show__comment{
+        right: 14%;
+        left: 10%;
+    }
+    .join-comments__stars{
+        top: 65px;
+    }
+    .join {
+        padding-top: 90px;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .join-show .join-show__comment{
+        display: none;
+    }
+    .join-comments {
+        margin-top: 0px;
+    }
+    .join {
+        padding-top: 70px;
+    }
+    .join .section-start{
+        text-align: center;
+    }
+    .join-commnets__view {
+        width: 45%;
+    }
+    .join-comments__stars {
+        top: 17px;
+    }
+}
