@@ -31,7 +31,7 @@ const Header = () => {
             <Link to="/about">Extensions</Link>
           </li>
           <li className="header_item">
-            <Link to="/portfolio">Pricing</Link>
+            <Link to="/success">Pricing</Link>
           </li>
           <li className="header_item">
             <Link to="/portfolio">Portfolio</Link>

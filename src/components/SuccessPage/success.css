@@ -1,0 +1,11 @@
+.success_header-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 58px;
+}
+
+.success{
+    padding-top: 35px;
+    background-color: #fafafa;
+}

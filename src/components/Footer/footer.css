@@ -85,6 +85,7 @@ footer h2 {
 .start_title {
   margin-bottom: 20px;
   color: #fff;
+  font-family: 'GTWalsheimProBold';
 }
 
 .footer_start .button_start {
@@ -129,6 +130,9 @@ footer h2 {
 .social_list_item:nth-child(2) {
   margin: 0 51px;
 }
+.social_list_item a{
+  color: #000;
+}
 
 .footer_copyright {
   font-family: 'GTWalsheimProBold';
@@ -155,5 +159,32 @@ footer h2 {
 
   .footer_links {
     margin-top: 72px;
+  }
+  .services_info{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 480px){
+  footer h2{
+    font-size: 20px;
+    letter-spacing: 0.6px;
+  }
+  .services_subtitle{
+    font-size: 12px;
+    letter-spacing: 0.36px;
+  }
+  .footer_button-start{
+    padding: 8px 18px 5px 15px;
+  }
+  .footer_button-white{
+    padding: 8px 18px 6px 15px;
+  }
+  .footer_start .button_start{
+    width: auto;
+    height: auto;
+  }
+  .start-form{
+    height: 163px;
   }
 }
