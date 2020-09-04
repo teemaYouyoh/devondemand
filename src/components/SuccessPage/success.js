@@ -2,6 +2,7 @@ import React from "react";
 import Logo from "./img/devondemand.png";
 import { Link } from 'gatsby';
 import Button from '@material-ui/core/Button';
+import ThanksForm from "../ThanksForm/thanks.js";
 import "./success.css";
 
 const SuccessPage = () =>{
@@ -19,7 +20,14 @@ const SuccessPage = () =>{
                     </ul>
                 </nav>
             
-                
+                <ThanksForm />
+
+                <nav className="success_footer">
+                    <ul className="success_footer-list">
+                        <li className="success_footer-item">Customer support</li>
+                        <li className="success_footer-item">© 2020, DEVONDEMAND.CO. All Rights Reserved.</li>
+                    </ul>
+                </nav>
             </div>
         </div>
     )
