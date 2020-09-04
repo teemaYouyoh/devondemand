@@ -1,0 +1,21 @@
+.integrate{
+    font-family: "GTWalsheimPro"; 
+    padding-top: 195px;
+    background-color: #fafafa;
+    padding-bottom: 200px;
+}
+
+.integrate .section-start{
+    max-width: 700px;
+}
+
+.integrate-tools{
+    width: 100%;
+    text-align: center;
+}
+
+.integrate-tools img{
+    object-fit: cover;
+    width: 90%;
+    margin-top: 18px;
+}
