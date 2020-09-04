@@ -105,3 +105,9 @@
 .MuiPaper-root.MuiAccordion-root.MuiAccordion-rounded.MuiPaper-elevation1.MuiPaper-rounded {
   border-bottom: 2px solid rgb(145, 158, 171, 0.2);
 }
+
+@media screen and (max-width: 1280px) {
+  .faqs_sidebar {
+    display: none;
+  }
+ }
