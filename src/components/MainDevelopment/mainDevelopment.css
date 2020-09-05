@@ -151,12 +151,17 @@
     margin: 10px auto;
 }
 
-.development-footer span{
+.development-footer a{
     color: #909090;
     font-size: 14px;
     font-weight: 400;
     line-height: 22px;
     text-decoration: underline;
+}
+
+.development-footer a:hover{
+    color: #686565;
+    transition: 0.3s;
 }
 
 .development-info .MuiAlert-standardSuccess{
@@ -180,6 +185,125 @@
 .development-info  .MuiAlert-root {
     padding: 5px 22px;
     font-size: 12px;
+}
+
+.previous-step{
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 20px;
+    text-decoration: underline;
+    color: #000;
+    margin-left: 20px;
+}
+
+.development-form__header{
+    display: flex;
+    justify-content: space-between;
+    margin: 33px 20px 20px;
+}
+
+.development-form__header p{
+    color: #000000;
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+    line-height: 21px;
+}
+
+.second-form .MuiCheckbox-colorSecondary.Mui-checked {
+    color: #4b6fff;
+}
+
+.form-check{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 22px;
+    margin-left: 10px;
+}
+
+.second-form .MuiButton-contained{
+    margin: 15px 15px 0px;
+}
+
+.form-check a{
+    color: #6772e5;
+    width: 42px;
+    height: 44px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+    background-color: #ffffff;
+    border-radius: 50%;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding: 2px 4px;
+    font-family: 'GTWalsheimProBold';
+}
+.form-check__choose{
+    display: flex;
+    align-items: center;
+}
+.form-check__choose p{
+    margin-right: 20px;
+}
+
+.third-form .MuiDropzoneArea-textContainer {
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 50px;
+    padding: 115px 0px 90px;
+}
+
+.third-form .MuiTypography-h5{
+    font-family: 'GTWalsheimProBold';
+    color: #2a62ff;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.22px;
+    line-height: 18px;
+}
+
+.third-form .MuiDropzoneArea-root{
+    border: 3px dashed #2a62ff;
+    border-radius: 8px;
+    outline: none;
+    position: relative;
+    margin-top: 100px;
+    margin-bottom: 120px;
+}
+
+.third-form .MuiDropzoneArea-icon {
+    color: rgb(42 98 255);
+    margin-bottom: 10px;
+}
+
+.third-form .form-dropfox{
+    margin-top: 100px;
+}
+
+.third-form .MuiDropzoneArea-root::before{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    width: 80px;
+    height: 66px;
+    transform: translate(-50%, 100%);
+    background: url(./img/folder.svg) no-repeat;
+    background-size: cover;
+}
+
+.third-form .MuiDropzoneSnackbar-successAlert{
+    background-color: #4b6fff;
+}
+
+/* SECOND FORM - CHECKED CHECKBOX  */
+.development-form .MuiButton-contained.checked{
+    background-color: #4b6fff;
+    color: #fff;
 }
 
 @media(max-width: 1300px){
@@ -213,11 +337,64 @@
     .development-info h2{
         font-size: 32px;
     }
+    .development-form__header p,
+    .form-check__choose p,
+    .form-check__choose span,
+    .previous-step{
+        font-size: 10px;
+        line-height: 14px;
+    }
+    .form-check{
+        margin: 0px 0px 10px;
+    }
+    .form-check a{
+        font-size: 8px;
+        padding: 1px 5px;
+        width: 32px;
+        height: 32px;
+    }
+    .form-check__choose p{
+        margin-right: 10px;
+    }
+    .form-check .MuiSvgIcon-root{
+        font-size: 18px;
+    }
+    .form-check .PrivateSwitchBase-root-1{
+        padding-left: 0px;
+    }
+    .development-form__header{
+        margin: 10px 0px 20px;
+    }
+    .previous-step{
+        margin: 0px;
+    }
+    .second-form .MuiButton-contained{
+        margin: 15px 0px;
+    }
 }
 
 @media screen and (max-width: 520px){
+    .third-form .MuiDropzoneArea-root{
+        margin: 30px 0px;
+    }
     .development-form form{
         padding: 13px 25px 18px;
+    }
+    .third-form .MuiDropzoneArea-textContainer{
+        padding: 30px 0px 50px;
+        margin-top: 20px;
+    }
+    .third-form .MuiDropzoneArea-root::before{
+        top: 0px; 
+        width: 62px;
+        height: 51px;
+    }
+    .third-form .MuiDropzoneArea-text {
+        margin-top: 15px;
+        margin-bottom: 0px;
+    }
+    .third-form .MuiTypography-h5{
+        font-size: 10px;
     }
     .development-form h5, .development-info h2 {
         font-size: 22px;
@@ -278,8 +455,14 @@
     .development-footer{
         margin: 0px auto;
     }
-    .development-footer span{
+    .development-footer a{
         font-size: 8px;
         line-height: 0px;
+    }
+    .development-form__header{
+        margin: 10px 0px 20px;
+    }
+    .previous-step{
+        margin: 0px;
     }
 }

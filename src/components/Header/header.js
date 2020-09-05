@@ -10,11 +10,10 @@ import instagram from "./img/instagram.svg";
 import twitter from "./img/twitter.svg";
 
 const Header = () => {
-  const container = document.querySelector(".mob-humburger");
-
-  container.onclick = function(){
-    container.classList.toggle("open");
-  }
+  // let container = document.querySelector(".mob-humburger");
+  // container.onclick = function(){
+  //   container.classList.toggle("open");
+  // }
   return (
     <header className="header">
         <div className="discount_header">
