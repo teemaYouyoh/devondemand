@@ -28,7 +28,7 @@ const Footer = () => {
                 From boring content campaign to unexpected one, there is us. Break your email vision & give your content something your subscribers have never seen before.
               </div>
               <div className="services_button">
-                <Button className="button_start" variant="contained" color="primary">
+                <Button className="button_start footer_button-start" variant="contained" color="primary">
                   Start now
                 </Button>
               </div>
@@ -44,7 +44,7 @@ const Footer = () => {
                 Try dev on demand today!
               </h2>
               <div className="start_button">
-                <Button className="button_start" variant="contained" color="primary">
+                <Button className="button_start footer_button-white" variant="contained" color="primary">
                   Start now
                 </Button>
               </div>
@@ -64,9 +64,9 @@ const Footer = () => {
             </div>
             <div className="footer_social">
               <ul className="social_list">
-                <li className="social_list_item"><GitHubIcon /></li>
-                <li className="social_list_item"><InstagramIcon /></li>
-                <li className="social_list_item"><TwitterIcon /></li>
+                <li className="social_list_item"><a href="#"><GitHubIcon /></a></li>
+                <li className="social_list_item"><a href="#"><InstagramIcon /></a></li>
+                <li className="social_list_item"><a href="#"><TwitterIcon /></a></li>
               </ul>
             </div>
             <div className="footer_copyright">

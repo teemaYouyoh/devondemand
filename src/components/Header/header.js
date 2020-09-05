@@ -10,10 +10,10 @@ import instagram from "./img/instagram.svg";
 import twitter from "./img/twitter.svg";
 
 const Header = () => {
-  // let container = document.querySelector(".mob-humburger");
+  // const container = document.querySelector(".mob-humburger");
+
   // container.onclick = function(){
   //   container.classList.toggle("open");
-  // }
   return (
     <header className="header">
         <div className="discount_header">
@@ -39,7 +39,7 @@ const Header = () => {
             <Link to="/about">Extensions</Link>
           </li>
           <li className="header_item">
-            <Link to="/portfolio">Pricing</Link>
+            <Link to="/success">Pricing</Link>
           </li>
           <li className="header_item">
             <Link to="/portfolio">Portfolio</Link>
