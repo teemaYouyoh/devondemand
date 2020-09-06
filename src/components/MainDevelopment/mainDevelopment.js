@@ -52,13 +52,13 @@ const MainDevelopment = () => {
                     </Collapse>
                </div>
                {/* FIRST FORM - STEP 1 */}
-               {/* <FirstMainForm /> */}
+               <FirstMainForm />
 
                {/* SECOND FORM - STEP 2 */}
                {/* <SecondMainForm /> */}
 
                {/* THIRD FORM - STEP 3 */}
-               <ThirdMainForm />
+               {/* <ThirdMainForm /> */}
            </div>
        </div>
    </div>
