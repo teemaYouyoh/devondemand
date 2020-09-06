@@ -9,6 +9,7 @@ const FirstMainForm = () => {
     const [isFrontOnly, setFrontOnly] = useState(true);
     const [isShowFirst, setShowFirst] = useState("first");
     const [buttonColor, setButtonColor] = useState(true);
+    const [imageName, setImageName] = useState("");
     const [arrayChecking, setArrayChecking] = useState([{
         _id: 1,
         checked: false
@@ -35,45 +36,26 @@ const FirstMainForm = () => {
     }]);
     const getStarted = "get started";
     const continueLabel = "continue";
-// <<<<<<< HEAD
-    const checkedIcon = (_id) => {
-        // console.log(arrayChecking.length);
-        for(let i=0; i<arrayChecking.length;i++){
-            if(arrayChecking[i]._id === _id){
-                // console.log(arrayChecking[i].checked, !arrayChecking[i].checked, i);
-                arrayChecking[i].checked = !arrayChecking[i].checked;
-            }
-        }
-        setArrayChecking(arrayChecking);
-        console.log(arrayChecking);
+    // const checkedIcon = (_id) => {
+    //     for(let i=0; i<arrayChecking.length;i++){
+    //         if(arrayChecking[i]._id === _id){
+    //             arrayChecking[i].checked = !arrayChecking[i].checked;
+    //         }
+    //     }
+    //     setArrayChecking(arrayChecking);
+    //     setButtonColor(false);
+    //     arrayChecking.forEach(element => {
+    //         if(element.checked){
+    //            setButtonColor(true);           
+    //         }
+    //     });
+    // }
 
-        // arrayChecking.forEach((element, index) => {
-        //     if(element !== _id)
-        //     setArrayChecking(arrayChecking.push(_id));
-        //     else
-        //     arrayChecking.splice(index,1);
-        // });
-        setButtonColor(false);
-        arrayChecking.forEach(element => {
-            if(element.checked){
-               setButtonColor(true);           
-            }
-        });
-
-        // arrayChecking.forEach(element => {
-        //     if(element.checked === false){
-        //         setButtonColor(false);
-        //     }
-        // });
-
-        console.log("Состояние: " + buttonColor);
+    const changeFileValue = () =>{
+        document.getElementById("uploadBtn").onchange = function () {
+            document.getElementById("uploadFile").value = this.value.replace("C:\\fakepath\\", "");
+        };
     }
-
-// =======
-//     document.getElementById("uploadBtn").onchange = function () {
-//         document.getElementById("uploadFile").value = this.value.replace("C:\\fakepath\\", "");
-//     };
-// >>>>>>> 02411140a69f3837b001c4af3b956d1675b2e1e8
     
     return(
         <div className="wrapper_full_form">
@@ -92,10 +74,10 @@ const FirstMainForm = () => {
                             <input onDragOver={() => setShowFirst("third")} name="link" type="text" placeholder="https://www.figma.com/yourdesign" />
                            <div className="form-next">
                                 <div className="form-upload__helper">
-                                    <input  onDragOver={() => setShowFirst("third")} id="uploadFile" class="f-input" placeholder="https://www.figma.com/yourdesign" />
-                                    <div class="fileUpload btn btn--browse">
+                                    <input  onDragOver={() => setShowFirst("third")} id="uploadFile" className="f-input" placeholder="https://www.figma.com/yourdesign" />
+                                    <div className="fileUpload btn btn--browse">
                                         <span>upload</span>
-                                        <input id="uploadBtn" type="file" class="upload" />
+                                        <input id="uploadBtn" onClick={()=>changeFileValue()} type="file" className="upload" />
                                     </div>
                                 </div>
                            </div>
@@ -125,7 +107,7 @@ const FirstMainForm = () => {
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />} onClick={() => checkedIcon(1)} checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />} checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
@@ -133,7 +115,7 @@ const FirstMainForm = () => {
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />} onClick={() => checkedIcon(2)} checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />}  checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
@@ -141,7 +123,7 @@ const FirstMainForm = () => {
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />} onClick={() => checkedIcon(3)} checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />} checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
@@ -149,7 +131,7 @@ const FirstMainForm = () => {
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />} onClick={() => checkedIcon(4)} checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />}  checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
@@ -157,7 +139,7 @@ const FirstMainForm = () => {
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />} onClick={() => checkedIcon(5)} checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />} checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
@@ -165,18 +147,14 @@ const FirstMainForm = () => {
                      </div>
                      <div className="form-check">
                          <div className="form-check__choose">
-                             <Checkbox icon={<CircleUnchecked />} onClick={() => checkedIcon(6)} checkedIcon={<CircleCheckedFilled />}/>
+                             <Checkbox icon={<CircleUnchecked />} checkedIcon={<CircleCheckedFilled />}/>
                              <p>Connect Stripe</p>
                              <span>+2 business days</span>
                          </div>
                          <a href="#">stripe</a>
                      </div>
-{/* <<<<<<< HEAD */}
-                     <a className={buttonColor ? "active" : "n"} href="">gwgwgw</a>
-                     <Button className={buttonColor ? "active" : "n"} variant="contained">get started</Button>
-{/* ======= */}
+                     <Button className={buttonColor ? "active" : "not_active"} variant="contained">get started</Button>
                      </div>
-{/* >>>>>>> 02411140a69f3837b001c4af3b956d1675b2e1e8 */}
                  </form>
                  <div className="development-footer">
                     <a href="#"><span>By clicking on the button, you agree to our Terms of Service and have read and acknowledge our Privacy Policy.</span></a>

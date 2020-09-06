@@ -5,7 +5,7 @@ import notified from "./img/ff.svg";
 
 const MainNotified = () => {
   return (
-   <div class="notified">
+   <div className="notified">
         <div className="notified-wrapper">
             <div className="section-start">
                 <h3>Get notified at every single steps.</h3>

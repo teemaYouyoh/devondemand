@@ -5,7 +5,7 @@ import tools from "./img/group.png";
 
 const MainIntegrate = () => {
   return (
-   <div class="integrate">
+   <div className="integrate">
         <div className="integrate-wrapper">
             <div className="section-start center">
                 <h3>We will integrate any tool you love</h3>

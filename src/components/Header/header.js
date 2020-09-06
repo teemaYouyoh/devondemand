@@ -36,10 +36,10 @@ const Header = () => {
             <Link to="/">Process</Link>
           </li>
           <li className="header_item">
-            <Link to="/about">Extensions</Link>
+            <Link to="/">Extensions</Link>
           </li>
           <li className="header_item">
-            <Link to="/success">Pricing</Link>
+            <Link to="/faqs">Pricing</Link>
           </li>
           <li className="header_item">
             <Link to="/portfolio">Portfolio</Link>
@@ -62,14 +62,14 @@ const Header = () => {
         </label>
         <nav>    
           <ul>
-              <li><a href="#"><img src={Logo} alt="logo"/></a></li>
-              <li><a href="#">Process</a></li>
-              <li><a href="#">Extensions</a></li>
-              <li><a href="#">Pricing</a></li>
-              <li><a href="#">Portfolio</a></li> 
+              <li><Link to="/"><img src={Logo} alt="logo"/></Link></li>
+              <li><Link to="/">Process</Link></li>
+              <li><Link to="/">Extensions</Link></li>
+              <li><Link to="/faqs">Pricing</Link></li>
+              <li><Link to="/portfolio">Portfolio</Link></li> 
               <li><Button className="button_start" variant="contained" color="primary">Start now</Button></li>
-              <li><a href="#">Terms of service</a></li> 
-              <li><a href="#">Privacy policy</a></li> 
+              <li><Link to="/faqs">Terms of service</Link></li> 
+              <li><Link to="/faqs">Privacy policy</Link></li> 
               <div className="mobile-foor">
                   <img src={github} alt="github"/>
                   <img src={instagram} alt="instagram"/>

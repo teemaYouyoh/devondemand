@@ -14,8 +14,6 @@ const ThanksForm = () => {
                 </div>
                 <div className="form_success">
                     <div className="form">
-                        {/* <h5 className="form_title">Let’s bring your design
-                        to life</h5> */}
                         <label className="label_form" htmlFor="looking_for">You are looking for</label>
                         <div id="looking_for">
                             <button onClick={() => setTypeProject(true)} className={typeProject ? "looking_for-active" : "form_but"}>normal react app</button>

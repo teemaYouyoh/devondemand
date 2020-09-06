@@ -48,8 +48,6 @@
 .development-info li img{
     margin-right: 24px;
 }
-.development-form {
-}
 
 .form_dev{
     border-radius: 10px;
@@ -313,9 +311,6 @@
     .form-tabs button {
         width: 47%;
     }
-    .development-form {
-        
-    }
 }
 
 @media screen and (max-width: 1024px){
@@ -328,9 +323,6 @@
     }
     .development-info ul{
         margin-bottom: 40px;
-    }
-    .development-form{
-
     }
     .development-info p{
         font-size: 18px;
@@ -423,8 +415,6 @@
     }
     .development-info .MuiAlert-root{
         display: none;
-    }
-    .development-form {
     }
     .development-form .from-section__text{
         font-size: 10px;
