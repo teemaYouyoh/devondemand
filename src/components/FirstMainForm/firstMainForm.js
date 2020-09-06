@@ -10,6 +10,10 @@ const FirstMainForm = () => {
     const [isShowFirst, setShowFirst] = useState("first");
     const getStarted = "get started";
     const continueLabel = "continue";
+    document.getElementById("uploadBtn").onchange = function () {
+        document.getElementById("uploadFile").value = this.value.replace("C:\\fakepath\\", "");
+    };
+    
     return(
         <div className="wrapper_full_form">
             {isShowFirst === "first" &&
@@ -22,8 +26,19 @@ const FirstMainForm = () => {
                             <button onClick={() => setFrontOnly(true)} className={isFrontOnly ? "form-tabs__active" : "no"}>Front Only</button>
                             <button onClick={() => setFrontOnly(false)} className={!isFrontOnly ? "form-tabs__active" : "no"}>Front + API</button>
                         </div>
-                        <span className="from-section__text">Link to your design (you can also drag and drop a file)</span>
-                        <input onDragOver={() => setShowFirst("third")} name="link" type="text" placeholder="Https://www.figmaorsketch.com/yourdesign" />
+                        <div className="form-upload">
+                            <span className="from-section__text">Link to your design (you can also drag and drop a file)</span>
+                            <input onDragOver={() => setShowFirst("third")} name="link" type="text" placeholder="https://www.figma.com/yourdesign" />
+                           <div className="form-next">
+                                <div className="form-upload__helper">
+                                    <input  onDragOver={() => setShowFirst("third")} id="uploadFile" class="f-input" placeholder="https://www.figma.com/yourdesign" />
+                                    <div class="fileUpload btn btn--browse">
+                                        <span>upload</span>
+                                        <input id="uploadBtn" type="file" class="upload" />
+                                    </div>
+                                </div>
+                           </div>
+                        </div>
                         <span className="from-section__text">Number of pages</span>
                         <input name="pages" type="text" placeholder="3" />
                         <span className="from-section__text">Your e-mail</span>
@@ -38,8 +53,9 @@ const FirstMainForm = () => {
             }
             {
                 isShowFirst === "second" &&
-                <div className="development-form second-form">
+                <div className="development-form second-form">                    
                 <form name="check" method="" action="">
+                <div className="form_dev">
                      <h5>Let’s bring your design to life</h5>
                      <a onClick={() => setShowFirst("first")} className="previous-step">Previous step</a>
                      <div className="development-form__header">
@@ -95,6 +111,7 @@ const FirstMainForm = () => {
                          <a href="#">stripe</a>
                      </div>
                      <Button variant="contained">get started</Button>
+                     </div>
                  </form>
                  <div className="development-footer">
                     <a href="#"><span>By clicking on the button, you agree to our Terms of Service and have read and acknowledge our Privacy Policy.</span></a>
