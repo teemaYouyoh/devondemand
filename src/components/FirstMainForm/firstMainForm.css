@@ -1,0 +1,26 @@
+.wrapper_full_form{
+    width: 47.4%;
+}
+
+.previous-step{
+    cursor: pointer;
+}
+
+@media(max-width: 1300px){
+    .wrapper_full_form{
+        width: 52.4%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .wrapper_full_form{
+        margin-top: 40px;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 520px){
+    .wrapper_full_form{
+        margin-top: 0px;
+    } 
+}

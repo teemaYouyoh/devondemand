@@ -49,10 +49,9 @@
     margin-right: 24px;
 }
 .development-form {
-    width: 47.4%;
 }
 
-.development-form form{
+.form_dev{
     border-radius: 10px;
     background-color: #e0eaf5;
     padding: 33px 47px 47px;
@@ -315,7 +314,7 @@
         width: 47%;
     }
     .development-form {
-        width: 52.4%;
+        
     }
 }
 
@@ -331,8 +330,7 @@
         margin-bottom: 40px;
     }
     .development-form{
-        margin-top: 40px;
-        width: 100%;
+
     }
     .development-info p{
         font-size: 18px;
@@ -381,7 +379,7 @@
     .third-form .MuiDropzoneArea-root{
         margin: 30px 0px;
     }
-    .development-form form{
+    .form_dev{
         padding: 13px 25px 18px;
     }
     .third-form .MuiDropzoneArea-textContainer{
@@ -427,7 +425,6 @@
         display: none;
     }
     .development-form {
-        margin-top: 0px;
     }
     .development-form .from-section__text{
         font-size: 10px;
