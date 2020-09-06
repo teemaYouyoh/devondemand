@@ -101,6 +101,15 @@ footer h2 {
   margin-top: 204px;
 }
 
+.social_list_item .MuiSvgIcon-root:hover{
+  fill: #2a62ff;
+  transition: 0.3s;
+}
+
+.footer_docs_item:hover{
+  color: #2a62ff;
+  transition: 0.3s;
+}
 .links-wrapper {
   display: flex;
   flex-direction: column;
@@ -165,6 +174,11 @@ footer h2 {
   }
 }
 
+@media(max-width: 765px){
+  footer h2 {
+    font-size: 28px;
+  }
+}
 @media screen and (max-width: 480px){
   footer h2{
     font-size: 20px;

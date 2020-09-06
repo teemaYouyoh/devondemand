@@ -15,10 +15,12 @@ in an easy-to-use and powerful tool.</p>
                         Start now
                     </Button>
                 </div>
-                <Work />
-                <Work />
-                <Work />
-                <Work />
+                <div className="work-section">
+                    <Work />
+                    <Work />
+                    <Work />
+                    <Work />
+                </div>
             </div>
         </div>
     )

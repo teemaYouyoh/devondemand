@@ -8,6 +8,7 @@
 .success{
     padding-top: 35px;
     background-color: #fafafa;
+    min-height: 100vh;
 }
 
 .success_footer{
@@ -42,5 +43,8 @@
     }
     .success_footer-item:first-child{
         margin-bottom: 26px;
+    }
+    .success_footer-item:first-child{
+        font-size: 14px;
     }
 }

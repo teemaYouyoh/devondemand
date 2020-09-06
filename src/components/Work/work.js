@@ -9,8 +9,7 @@ const Work = () => {
             <div className="container">
                 <div className="portfolio_wrapper">
                         <h4 className="portfolio_title">This is our working process.</h4>
-                        <p className="portfolio_subtitle">Attract talent with beautiful job posts and manage candidates 
-    in an easy-to-use and powerful tool.</p>
+                        <p className="portfolio_subtitle">Attract talent with beautiful job posts and manage candidates in an easy-to-use and powerful tool.</p>
                         <Button className="button_start" variant="contained" color="primary">
                             Start now
                         </Button>

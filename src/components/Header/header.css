@@ -79,6 +79,7 @@
     text-decoration: underline;
     font-weight: 400;
     text-decoration: underline;
+    outline: none;
 }
 
 .MuiButtonBase-root.MuiButton-root.MuiButton-contained.button_start.MuiButton-containedPrimary{
@@ -249,7 +250,9 @@
         font-size: 16px;
         font-weight: 700;
     }
-
+    .discount_header .container{
+        padding: 0px 0px 0px 27px;
+    }
 }
 @media(max-width: 520px){
     .navigation{

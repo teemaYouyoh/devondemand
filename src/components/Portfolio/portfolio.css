@@ -65,4 +65,7 @@
         display: flex;
         padding-bottom: 25px;
     }
+    .work-section{
+        padding-bottom: 80px;
+    }
 }
