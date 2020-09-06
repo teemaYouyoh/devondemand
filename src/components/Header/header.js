@@ -55,7 +55,7 @@ const Header = () => {
       <div className="mobile-menu">
       <input id="burger" type="checkbox" />
 
-        <label className="mob-humburger" for="burger">
+        <label className="mob-humburger" htmlFor="burger">
             <span></span>
             <span></span>
             <span></span>

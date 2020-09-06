@@ -5,6 +5,12 @@
 .previous-step{
     cursor: pointer;
 }
+.active{
+    color: red;
+}
+.n{
+    color: green;
+}
 
 @media(max-width: 1300px){
     .wrapper_full_form{

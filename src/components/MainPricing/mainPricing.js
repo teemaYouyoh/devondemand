@@ -4,7 +4,7 @@ import checkmark from "./img/checkmark.svg";
 
 const MainPricing = () => {
   return (
-   <div class="pricing">
+   <div className="pricing">
        <div className="container">
            <div className="pricing-wrapper">
               <h4>A simple pricing plan</h4>
